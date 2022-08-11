@@ -1,0 +1,11 @@
+set encoding iso_8859_15
+set terminal postscript enhanced solid color "Helvetica" 20
+set output "eps_x.ps"
+set key off
+set termoption enhanced
+set label "(x polarization)" at 3.50,5.6
+
+set xrange [3:10]
+set xlabel "Energy [eV]"
+set ylabel '{/Symbol e}_2({/Symbol w}) (arbitrary units)' enhanced
+plot 'output' u 1:2 w l lw 3 lc rgb "red"
