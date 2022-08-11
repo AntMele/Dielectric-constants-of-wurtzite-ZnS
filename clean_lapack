@@ -1,0 +1,3 @@
+#!/bin/bash
+
+\rm -fr src/lapack-3.2  >& /dev/null

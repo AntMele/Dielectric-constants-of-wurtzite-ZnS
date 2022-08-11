@@ -1,0 +1,21 @@
+#!/bin/bash
+  
+FC=gfortran
+
+$FC -c kind.f90
+$FC -c constants.f90
+$FC -c cbmod.f90
+$FC -c input_cb.f90
+$FC -c recips.f90
+$FC -c set_lattice.f90
+$FC -c calculate_radius.f90
+$FC -c set_cb_parameters.f90
+$FC -c ggen.f90
+$FC -c gaussian.f90
+$FC -c kgen.f90
+$FC -c set_hamiltonian.f90
+$FC -c diagonalize.f90
+$FC -c deallocate_hamiltonian.f90
+$FC -c deallocate_all.f90
+$FC -c cb_permittivity.f90
+$FC -o cb_permittivity.x *.o   lapack-3.2/lapack_LINUX.a lapack-3.2/blas_LINUX.a

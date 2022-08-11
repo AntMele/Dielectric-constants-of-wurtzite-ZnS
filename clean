@@ -1,0 +1,3 @@
+#!/bin/bash
+
+\rm -f src/*.o src/*.mod src/*.x inputs/output inputs/*.ps inputs/TEST/input* inputs/TEST/output* inputs/TEST/0.0* inputs/TEST/*.ps >& /dev/null
